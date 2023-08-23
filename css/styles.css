@@ -1,0 +1,162 @@
+
+* {
+    font-size: larger;
+    font-family: Arial;
+}
+
+body{
+    /* flex-direction: column; */
+    background-color: aliceblue;
+    align-items: center;
+    vertical-align: middle;
+    background-image: url("../assets/BGI_2.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#form{
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border:1px solid rgb(153, 152, 152);
+    background-color: rgb(204, 202, 202);
+    padding: 0;
+}
+
+#list-container {
+    /* Add styles to control the positioning of list items */
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    /* width: 100%; */
+    /* position: relative; */
+    list-style-type: none;
+    /* justify-content: space-evenly; */
+}
+
+.list-item {
+    margin: auto;
+    /* position: inherit; */
+    /* margin-left: -500px; */
+    display: flex; /* Use flexbox layout to control spacing */
+   /* Align items vertically */
+    justify-content: space-between; /* Add a gap between elements */
+}
+
+.list-item input[type="checkbox"] {
+    /* order: 1; */
+    position: relative;
+    margin-left: 10%; /* Adjust the margin as needed */
+    /* margin-right: 200px; */
+    padding: 0;
+}
+
+.list-item .delete-task {
+    /* order: 2; */
+    margin: auto;
+}
+
+input{
+    flex-grow: 7;
+    border: none;
+    background: transparent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#form:hover{
+    background-color: rgb(233, 233, 233);
+
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#todo-icon{
+    flex-grow: 1;
+}
+
+/* input:focus + #add-task {
+    background-color: rgb(223, 221, 221);
+    border: none;
+} */
+
+/* input:focus ~ #todo-icon {
+    background-color: rgb(223, 221, 221);
+    border: none;
+} */
+
+#add-task{
+    background: transparent;
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+    display: none;
+    cursor: pointer;
+}
+
+button{
+    background: transparent;
+    border: none;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.filter:hover{
+    color: black;
+}
+
+#countDisplay{
+    flex-grow: 4;
+}
+
+.delete-task{
+    margin-right: -1000px;
+}
+
+.delete-task:hover{
+    animation: shake 0.5s;
+}
+
+#todo-list-div{
+    /* height: 80%; */
+    width: 60%;
+    top: 50%;
+    display: table;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    /* align-items: center; */
+    padding: 20px;
+    flex-direction: column;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px 5px rgb(128, 106, 79);
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
