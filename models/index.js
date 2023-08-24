@@ -10,10 +10,10 @@ function showBtn(){
 
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'li') {
+  if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
-}, false);
+});
 
 // function to add the task given by user to the list and update the web page
 function add_task(){
