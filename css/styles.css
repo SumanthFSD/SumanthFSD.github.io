@@ -1,5 +1,4 @@
 /* Include the padding and border in an element's total width and height */
-
 * {
     font-size: larger;
     font-family: Arial;
@@ -55,6 +54,7 @@ input:focus{
 
 /* Style the todo icon */
 #todo-icon{
+    cursor:auto;
     flex-grow: 1;
 }
 
