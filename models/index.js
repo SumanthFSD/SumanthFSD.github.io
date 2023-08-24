@@ -28,19 +28,10 @@ function add_task(){
     addTaskbtn.style.display = 'none'; 
     if(input!=''){
         const li = document.createElement("li");
-        // const checkbox = document.createElement('input');
-        // checkbox.type = "checkbox";
-        // checkbox.value = 1;
-        // checkbox.className = "todo-checkbox";
-        // checkbox.id = "tick-completed";
-        // li.appendChild(checkbox); // Add check box at the beginning of the list item
-
-
         li.className = "list-item";
         const textSpan = document.createElement("span");
         textSpan.textContent = input;
         li.appendChild(textSpan);
-        // li.appendChild(document.createTextNode(input)); // Add the task' text to the list item
         // Add the delete button which deletes the corresponding task when clicked
         const deleteButton = document.createElement('button');
         deleteButton.className = 'delete-task';
@@ -51,8 +42,6 @@ function add_task(){
         li.appendChild(deleteButton);
 
         todoList.appendChild(li);
-        // li.innerHTML += '<button class="delete-task" onclick = delete_task(this)><i class="fas fa-trash"></i></button>'
-        // todoList.appendChild(li); // Add the list item to the items list to display 
     }
     else{
         alert('Please add a task, adding a task increases chances of completing it!!!');
@@ -74,13 +63,4 @@ function updateTasksCount(){
     totalCountSpan.textContent = totalItems; // Update the count in the text area of the span element
 }
 
-// filter the tasks to show only the completed tasks so far
-function showCompletedTasks(){
-
-}
-
-// filters the tasks to show the pending tasks 
-function showUncompletedTasks(){
-
-}
 
