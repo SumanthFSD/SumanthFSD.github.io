@@ -1,8 +1,8 @@
 <html>
     <head>
         <title>TODO List</title>
-        <script src="../models/index.js"></script>
-        <link rel="stylesheet" href="../css/styles.css">
+        <!-- <script src="models/index.js"></script> -->
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="utf-8">
@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
     <body>
-        <div id="todo-list-div">
+        <div id="todo-list-div" class="list-page">
             <!-- list container -->
             <div id="form">
                 <button id="todo-icon"><i class="fas fa-clipboard-list fa-2x"></i></button>
@@ -21,11 +21,10 @@
             </div>
             <small></small>
             <hr>
-            <div id="list-container">
-                <ul id="todo-list">
-                    <!-- li items go here -->
-                </ul>
-            </div>
+
+            <ul id="todo-list">
+                <!-- li items go here -->
+            </ul>
             <hr>
             <small id="footer">
                 <p id="countDisplay"><span id="totalCount">0</span> tasks waiting</p>
@@ -34,4 +33,5 @@
             </small>
         </div>
     </body>
+    <script src="models/index.js"></script>
 </html>

@@ -8,6 +8,13 @@ function showBtn(){
     }
 }
 
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'li') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
 // function to add the task given by user to the list and update the web page
 function add_task(){
     let todoList = document.getElementById("todo-list");
@@ -21,14 +28,15 @@ function add_task(){
     addTaskbtn.style.display = 'none'; 
     if(input!=''){
         const li = document.createElement("li");
-        const checkbox = document.createElement('input');
-        checkbox.type = "checkbox";
-        checkbox.value = 1;
-        checkbox.className = "todo-checkbox";
-        checkbox.id = "tick-completed";
+        // const checkbox = document.createElement('input');
+        // checkbox.type = "checkbox";
+        // checkbox.value = 1;
+        // checkbox.className = "todo-checkbox";
+        // checkbox.id = "tick-completed";
+        // li.appendChild(checkbox); // Add check box at the beginning of the list item
+
 
         li.className = "list-item";
-        li.appendChild(checkbox); // Add check box at the beginning of the list item
         const textSpan = document.createElement("span");
         textSpan.textContent = input;
         li.appendChild(textSpan);
