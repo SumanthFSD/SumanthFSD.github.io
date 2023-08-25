@@ -12,5 +12,7 @@
 ## Implementation:
 The app is implemented using pure HTML, CSS and vanilla JavaScript. The app uses Font Awesome for icon design. 
 
-## Note:
+### Note:
 The entered tasks are available only till the session ends. Once you restart the application or browser the tasks are deleted.
+## Contributions:
+Any contributions are openly welcomed and I am looking forward to those and will be grateful to the contributors.
